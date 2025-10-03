@@ -3,94 +3,25 @@ html
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Le Jeu des Faux Amis</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #fdfbfb, #ebedee);
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-}
-
-.container {
-      text-align: center;
-      background: white;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      max-width: 400px;
-      width: 90%;
-}
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
-}
-
-.subtitle {
-      font-size: 1.1em;
-      color: #555;
-      margin-bottom: 20px;
-}
-
-.hero img {
-      margin: 20px 0;
-}
-
-.actions button {
-      display: block;
-      width: 100%;
-      margin: 10px 0;
-      padding: 12px;
-      font-size: 1em;
-      background-color: #4caf50;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-}
-
-.actions button:hover {
-      background-color: #45a049;
-}
-
-    footer {
-      margin-top: 30px;
-      font-size: 0.9em;
-      color: #777;
-}
-
-    footer a {
-      color: #4caf50;
-      text-decoration: none;
-}
-  </style>
 </head>
 <body>
   <div class="container">
     <h1>🎭 Le Jeu des Faux Amis</h1>
-    <p class="subtitle">Qui te connaît vraiment?</p>
-
-    <div class="hero">
-      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" alt="Faux amis" width="120" />
-    </div>
-
-    <div class="actions">
-      <button onclick="window.location.href='create.html'">🚀 Commencer le défi</button>
-      <button onclick="window.location.href='scoreboard.html'">📊 Voir les réponses</button>
-    </div>
-
-    <footer>
-      <p>Développé avec ❤️ par TonNom</p>
-      <p><a href="https://github.com/TonUtilisateur/faux-amis-game" target="_blank">Voir le projet sur GitHub</a></p>
-    </footer>
+    <p>Qui te connaît vraiment?</p>
+    <input type="text" id="username" placeholder="Antre non ou" />
+    <button onclick="startGame()">🚀 Commencer</button>
   </div>
+
+  <script>
+    function startGame() {
+      const name = document.getElementById("username").value.trim();
+      if (!name) return alert("Tanpri antre non ou");
+      localStorage.setItem("username", name);
+      window.location.href = "create.html";
+}
+  </script>
 </body>
 </html>
+ ⁠
