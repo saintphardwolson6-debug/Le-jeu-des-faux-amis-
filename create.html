@@ -1,0 +1,161 @@
+html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Créer ton défi</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      margin: 0;
+      padding: 0;
+}
+
+.container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+    h2 {
+      text-align: center;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+}
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+}
+
+.question-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.question-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+}
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+}
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 20px;
+}
+
+    button:hover {
+      background-color: #45a049;
+}
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #777;
+}
+
+    footer a {
+      color: #4caf50;
+      text-decoration: none;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🧠 Crée ton défi</h2>
+    <p>Réponds à 10 questions sur toi. On ajoutera des pièges 😈</p>
+
+    <form id="questionForm">
+      <div class="question-card">
+        <h3>🍕 Ton plat préféré?</h3>
+        <input type="text" name="q1" placeholder="Ex: Riz djon djon" />
+      </div>
+
+      <div class="question-card">
+        <h3>🎨 Ta couleur préférée?</h3>
+        <input type="text" name="q2" placeholder="Ex: Bleu royal" />
+      </div>
+
+      <div class="question-card">
+        <h3>🐶 Ton animal préféré?</h3>
+        <input type="text" name="q3" placeholder="Ex: Chien" />
+      </div>
+
+      <div class="question-card">
+        <h3>🎵 Ton style musical?</h3>
+        <input type="text" name="q4" placeholder="Ex: Kompa" />
+      </div>
+
+      <div class="question-card">
+        <h3>⚽ Ton sport favori?</h3>
+        <input type="text" name="q5" placeholder="Ex: Football" />
+      </div>
+
+      <div class="question-card">
+        <h3>☕ Ta boisson favorite?</h3>
+        <input type="text" name="q6" placeholder="Ex: Café" />
+      </div>
+
+      <div class="question-card">
+        <h3>🎬 Ton film préféré?</h3>
+        <input type="text" name="q7" placeholder="Ex: Titanic" />
+      </div>
+
+      <div class="question-card">
+        <h3>🌸 Ta saison préférée?</h3>
+        <input type="text" name="q8" placeholder="Ex: Printemps" />
+      </div>
+
+      <div class="question-card">
+        <h3>📱 Ton réseau social préféré?</h3>
+        <input type="text" name="q9" placeholder="Ex: Instagram" />
+      </div>
+
+      <div class="question-card">
+        <h3>🎮 Ton passe-temps favori?</h3>
+        <input type="text" name="q10" placeholder="Ex: Jeux vidéo" />
+      </div>
+
+      <button type="submit">✅ Valider mes réponses</button>
+    </form>
+
+    <footer>
+      <p><a href="index.html">⬅ Retour à l'accueil</a></p>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("questionForm").addEventListener("submit", function(e) {
+      e.Ici ou ka ajoute fonksyon pou sove repons yo epi redireksyon
+      window.location.href = "result.html";
+});
+  </script>
+</body>
+</html>
