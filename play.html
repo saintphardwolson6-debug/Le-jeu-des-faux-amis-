@@ -1,0 +1,106 @@
+html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joue le défi</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      margin: 0;
+      padding: 0;
+}
+
+.container {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+    h2 {
+      text-align: center;
+      font-size: 1.8em;
+      margin-bottom: 10px;
+}
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+}
+
+.answer-card {
+      background: #f9f9f9;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+}
+
+.answer-card strong {
+      display: block;
+      font-size: 1.2em;
+      margin-bottom: 10px;
+}
+
+.answer-card button {
+      margin: 5px;
+      padding: 10px 16px;
+      font-size: 0.9em;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+}
+
+.answer-card button:hover {
+      background-color: #45a049;
+}
+
+    #finishBtn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      font-size: 1em;
+      background-color: #2196f3;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 30px;
+}
+
+    #finishBtn:hover {
+      background-color: #1976d2;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🕵️ Devine les vraies réponses</h2>
+    <p>Choisis si chaque réponse est vraie ou fausse pour ton ami.</p>
+
+    <div id="quizContainer"></div>
+
+    <button id="finishBtn" onclick="finishGame()">✅ Terminer le défi</button>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    function finishGame() {
+      alert("Défi terminé! Ton score sera ajouté au classement.");
+      window.location.href = "scoreboard.html";
+}
+  </script>
+</body>
+</html>
+ ⁠
